@@ -137,8 +137,10 @@ function displayMultiplyQuestion(operand1, operand2) {
  * For displaying the operands for division questions
  */
 function displayDivisionQuestion(operand1, operand2) {
-    document.getElementById("operand1").textContent =  operand1 > operand2 ? operand1 : operand2
-    document.getElementById("operand2").textContent = operand2 > operand1 ? operand1 : operand2
+    let newOperand1 = operand1 * operand2
+    
+    document.getElementById("operand1").textContent = newOperand1
+    document.getElementById("operand2").textContent = operand2
     document.getElementById("operator").textContent = "/"
 }
 
